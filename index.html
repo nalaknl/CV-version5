@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- lien avec le css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- je me place un petit icône super stylé, lol -->
+    <link rel="shortcut icon" href="./media/12monkey.png" />
+
+    <!-- lien pour aller rechercher des îcones (pour l'âge, le numéro de tel etc...) -->
+
+    <title>CV seb</title>
+</head>
+
+<body>
+    <header>
+        <!-- navbar-light c'est pour la bande grise -->
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">seb leriche</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#language" class="nav-link">language & formation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <h1>Sébastien leriche</h1>
+            <h3>éléve AFPA</h3>
+            <div id="line"></div>
+            <div class="defileParent">
+                <span class="defile" data-text=" Développeur front-end Junior ">
+            DEV JUNIOR FRONT-END
+          </span>
+            </div>
+
+            <div class="container">
+                <div class="boite"></div>
+
+                <div class="defile">
+                    <h5><i class="fa fa-user"></i> 48 ans</h5>
+                    <h5><i class="fa fa-compass"> occitanie </i></h5>
+                    <h5><i class="fa fa-phone"></i> 06 46 84 09 59</h5>
+                </div>
+
+                <!-- d-none stipule que le texte n'apparait pas, le javasript se met dans le span pour que le text soit injecté! -->
+                <!-- des lors que l'écran est médium, il s'affiche! -->
+                <div class="d-none d-md-block col-md-6">
+                    <span class="typed"></span>
+                </div>
+                <div class="col-6 col-md-3 photo">
+                    <img class="cligno" src="./assets/images/photos/moi-soleil-danslesyeux.png" alt="photomoi" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="button">
+        <a href="./assets/docs/CV_2022-04-05_Sébastien_LERICHE.pdf" target="_blanck">
+            <img src="./assets/images/monCvPdf_25.png" alt="moncv_25" />
+        </a>
+    </div>
+
+    <script src="./script.js"></script>
+    <!-- col-6 dit que qu'il prend la moitié de la page (de base) -->
+    <!-- à partir du moment ou l'écran est md ou plus grand il laisse la place sur le côté (pour le texte) -->
+</body>
+
+</html>
